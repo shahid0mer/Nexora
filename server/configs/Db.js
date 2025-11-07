@@ -3,7 +3,7 @@ import { seedProducts } from "../controllers/productController.js";
 
 const ConnectDb = async () => {
   try {
-    await mongoose.connect(`mongodb+srv://shahid:ns2009517@cluster1.zsjwipv.mongodb.net/nexora`);
+    await mongoose.connect(`${process.env.MONGO_URI}`);
     seedProducts()
     console.log("Database connected successfully")
   } catch (error) {
