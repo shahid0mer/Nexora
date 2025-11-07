@@ -180,7 +180,7 @@ const Cart = ({ onCheckout }) => {
                 
                 <div className="flex gap-4">
                   <button 
-                    onClick={() => window.location.href = '/products'}
+                    onClick={() => window.location.href = '/'}
                     className="flex-1 bg-gray-100 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-200 transition-colors duration-200 font-medium"
                   >
                     Continue Shopping
